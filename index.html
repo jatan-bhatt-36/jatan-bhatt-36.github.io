@@ -36,8 +36,32 @@
 
       .resume-button:hover {background-color: #004999;}
       
+      form input, form textarea {
+          width: 100%;
+          max-width: 600px;
+          padding: 10px;
+          margin-top: 6px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          font-family: Arial, sans-serif;}
+
+      form button {
+          padding: 10px 16px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          background: #0066cc;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;}
+      
+      form button:hover {background: #004999;}
+     .hp {display: none;}
     </style>  
    </head>
+<!-- custom honeypot Formspree
+  <input type="text" name="website_url_check" class="hp2">
+  .hp2 {opacity: 0;position: absolute;left: -9999px;}
+  #Create a Formspree Rule: If website_url_check is not empty → Tag as Spam -->
 
   <body>
     <!-- NAVIGATION PANEL -->
@@ -127,6 +151,10 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_redirect" value="thank-you.html">
+        <input type="text" name="_gotcha" class="hp">
+
+        
         <p>
           <label>Your Name</label><br>
           <input type="text" name="name" required>
