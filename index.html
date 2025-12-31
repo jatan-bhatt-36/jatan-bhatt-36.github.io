@@ -5,42 +5,39 @@
     <title>Jatan Bhatt | Portfolio</title>
   
     <style>
-      body {font-family: Arial, sans-serif; max-width: 800px;  margin: 40px auto;  padding: 0 20px;  line-height: 1.6; }
-      nav {
-        position: sticky;
-        margin-bottom: 30px;
-        top: 0;
-        background: white;
-        padding: 12px 0;
-        border-bottom: 1px solid #eee;}
+      body {font-family: Arial, sans-serif; max-width: 800px; 
+            margin: 40px auto;  padding: 0 20px;  line-height: 1.6; }
+      
+      nav { position: sticky;  margin-bottom: 30px; top: 0; background: white;  
+           padding: 12px 0;  border-bottom: 1px solid #eee;}
       
       section {padding-top: 20px; margin-top: 30px;}
 
-      .button-link {
-        display: inline-block;
-        margin-right: 10px;
-        padding: 8px 12px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        text-decoration: none;}
-      
       h1, h2 {color: #333;}
       p {color: #555;}
       a {color: #0066cc; text-decoration: none;}
       a:hover {text-decoration: underline;}
       small {color:#777;}
 
-      .project-card {
-        border: 1px solid #eee;
-        border-radius: 10px;
-        padding: 14px;
-        margin: 12px 0;}
-    
-    
-    
+      .button-link { display: inline-block; margin-right: 10px; padding: 8px 12px; 
+                    border: 1px solid #ddd;  border-radius: 6px; text-decoration: none;}
+
+      .project-card { border: 1px solid #eee; border-radius: 10px;
+                     padding: 14px; margin: 12px 0;}  
+      
+      .project-card h3 { margin: 0 0 6px 0; color: #333;}      
+      .project-card p {margin: 0; color: #555;}      
+      .project-card a { text-decoration: none; color: #0066cc; font-weight: bold;}      
+      .project-card a:hover { text-decoration: underline;}
+
+      .resume-button { display: inline-block; margin-top: 10px; padding: 10px 16px;
+                      background-color: #0066cc; color: white; text-decoration: none;
+                      border-radius: 6px; font-weight: bold;}
+
+      .resume-button:hover {background-color: #004999;}
+      
     </style>  
-    
-  </head>
+   </head>
 
   <body>
     <!-- NAVIGATION PANEL -->
@@ -50,14 +47,20 @@
       <a href="#portfolio">Portfolio</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
     </nav>
 
     <!-- HOME PAGE -->
     <section id = "home">
       <h1>Welcome to my Porfolio</h1>
+      <p>Hi, I’m Jatan Bhatt. This site shares my projects, skills, and how to reach me.</p>
       <p>
-        Hi, I’m Jatan Bhatt. This site shares my projects, skills, and how to reach me.
-      </p></section>
+        <a class="button-link" href="https://www.linkedin.com/in/jatan-bhatt/">LinkedIn</a>
+        <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
+        <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
+      </p>
+      <p><a class="resume-button" href="resume.pdf" target="_blank">View My Resume</a></p>
+    </section>
     
     <!-- About Me section -->
     <section id = "about">
@@ -70,66 +73,35 @@
     </p>
     </section>
     
-<!-- Trial Projects -->
-    <div class="project-card">
-  <h3>
-    <a href="https://github.com/YOURUSERNAME/student-call-analysis">
-      Student Call Analysis Dashboard
-    </a>
-  </h3>
-  <p>Analyzed student engagement data and visualized call patterns to identify trends.</p>
-</div>
-
-<div class="project-card">
-  <h3>
-    <a href="https://github.com/YOURUSERNAME/car-price-prediction">
-      Car Price Prediction Model
-    </a>
-  </h3>
-  <p>Built and compared models to predict used car prices.</p>
-</div>
-
-<div class="project-card">
-  <h3>
-    <a href="https://github.com/YOURUSERNAME/marketing-campaign-analysis">
-      Marketing Campaign Performance Analysis
-    </a>
-  </h3>
-  <p>Evaluated campaign performance to measure ROI and customer response.</p>
-</div>
    
     <!-- Projects section -->
-    <section id = 'section'>
-    
+    <section id = 'section'>    
     <h2>Projects</h2>
-    <p>
-      Here are a few projects I’ve worked on:
-    </p>  
-    <ul>
-      <li>
-       <a href="https://github.com/jatan-bhatt-36/computer-vision-project">
+    <p> Here are a few projects I’ve worked on:</p>      
+    <div class="project-card"> 
+      <h3>
+        <a href="https://github.com/jatan-bhatt-36/computer-vision-project">
           Computer Vision Project
-       </a><br>
-        <small>
-          Evaluated GPU-trained models on their ability to detect underage alcohol consumers using facial recognition.
-        </small></li>
-      
-      <li>
+        </a>
+      </h3>
+      <p>Evaluated GPU-trained models on their ability to detect underage alcohol consumers using facial recognition.</p>
+    </div>   
+    <div class="project-card"> 
+      <h3> 
         <a href="https://github.com/jatan-bhatt-36/car-price-prediction-model">
           Car Price Prediction Model
-        </a><br>
-        <small>
-          Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.
-        </small></li>
-
-      <li>
-        <a href="https://github.com/jatan-bhatt-36/spotify-track-popularity">
-          Spotify Track Popularity
-        </a><br>
-        <small>
-          Built MLP Neural Networks to assess the extent to which audio features alone can predict a song’s popularity using PyTorch.
-        </small></li>
-    </ul>
+        </a>
+      </h3>
+      <p>Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.</p>
+    </div>
+    <div class="project-card"> 
+      <h3> 
+        <a href="https://github.com/jatan-bhatt-36/car-price-prediction-model">
+          Car Price Prediction Model
+        </a>
+      </h3>
+      <p>Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.</p>
+    </div>  
     </section>
 
     <!-- Skills section -->
@@ -154,17 +126,27 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>
-        <!--<a href="mailto:jatanbhatt36@email.com">jatanbhatt36@email.com</a><br>
-        <a href="https://www.linkedin.com/in/jatan-bhatt-/">My LinkedIn</a><br>
-        <a href="https://github.com/jatan-bhatt-36">My GitHub</a> -->
-        <a class="button-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a>
-        <a class="button-link" href="https://github.com/YOURUSERNAME">GitHub</a>
-        <a class="button-link" href="mailto:you@email.com">Email</a>
-      </p></section>
- 
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <p>
+          <label>Your Name</label><br>
+          <input type="text" name="name" required>
+        </p>
+
+        <p>
+          <label>Your Email</label><br>
+          <input type="email" name="email" required>
+        </p>
+
+        <p>
+          <label>Message</label><br>
+          <textarea name="message" rows="5" required></textarea>
+        </p>
+
+        <button type="submit">Send</button>
+      </form>
+    </section> 
   </body>
-</html>
+  </html>
 
 
 
