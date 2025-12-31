@@ -2,16 +2,20 @@
 <html lang="en">
   
   <head>
-    <title>Jatan Bhatt | Portfolio</title>
-  
+    <title>Jatan Bhatt | Portfolio</title>  
+<!-- Style of the Webpage -->    
     <style>
       body {font-family: Arial, sans-serif; max-width: 800px; 
-            margin: 40px auto;  padding: 0 20px;  line-height: 1.6; }
+            margin: 20px auto;  padding: 0 20px;  line-height: 1.6; 
+            background: linear-gradient(135deg,#f5f7fa,#c3cfe2);}
       
+      .page {max-width: 900px; margin: 40px auto;  padding: 30px;
+             background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);}
+
       nav {position: sticky;  margin-bottom: 30px; top: 0; background: white;  
            padding: 24px;  border-bottom: 2px solid #eee;}
       
-      section {padding-top: 20px; margin-top: 30px;}
+      section {padding-top: 20px; margin-top: 30px; margin-bottom: 50px}
 
       h1, h2 {color: #333;}
       p {color: #555;}
@@ -24,46 +28,36 @@
 
       .project-card { border: 1px solid #eee; border-radius: 10px;
                      padding: 14px; margin: 12px 0;}  
-      
       .project-card h3 { margin: 0 0 6px 0; color: #333;}      
       .project-card p {margin: 0; color: #555;}      
       .project-card a { text-decoration: none; color: #0066cc; font-weight: bold;}      
       .project-card a:hover { text-decoration: underline;}
 
-      .resume-button { display: inline-block; margin-top: 10px; padding: 10px 16px;
-                      background-color: #0066cc; color: white; text-decoration: none;
-                      border-radius: 6px; font-weight: bold;}
-
+      .resume-button {
+        display: inline-block; margin-top: 10px; padding: 10px 16px; 
+        background-color: #0066cc; color: white; text-decoration: none;
+        border-radius: 6px; font-weight: bold;}
       .resume-button:hover {background-color: #004999;}
       
       form input, form textarea {
-          width: 100%;
-          max-width: 600px;
-          padding: 10px;
-          margin-top: 6px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
-          font-family: Arial, sans-serif;}
-
+        width: 100%; max-width: 600px; padding: 10px;  margin-top: 6px;
+        border: 1px solid #ddd; border-radius: 6px; font-family: Helvetica, sans-serif;}
       form button {
-          padding: 10px 16px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
-          background: #0066cc;
-          color: white;
-          font-weight: bold;
-          cursor: pointer;}
-      
+        padding: 10px 16px;border: 1px solid #ddd; border-radius: 6px; background: #0066cc;
+        color: white; font-weight: bold; cursor: pointer;}
       form button:hover {background: #004999;}
      .hp {display: none;}
+      
     </style>  
    </head>
-<!-- custom honeypot Formspree
+
+  <!-- custom honeypot Formspree
   <input type="text" name="website_url_check" class="hp2">
   .hp2 {opacity: 0;position: absolute;left: -9999px;}
   #Create a Formspree Rule: If website_url_check is not empty → Tag as Spam -->
 
   <body>
+    <div class='page'>
     <!-- NAVIGATION PANEL -->
     <nav>
       <a href= "#home">Home | </a>
@@ -83,7 +77,7 @@
         <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
         <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
       </p>
-      <p><a class="resume-button" href="resume.pdf" target="_blank">View My Resume</a></p>
+      <p><a class="resume-button" href="Jatan_Bhatt_Resume.pdf" target="_blank">View My Resume</a></p>
     </section>
     
     <!-- About Me section -->
@@ -169,6 +163,7 @@
         <button type="submit">Send</button>
       </form>
     </section> 
+    </div>
   </body>
   </html>
 
