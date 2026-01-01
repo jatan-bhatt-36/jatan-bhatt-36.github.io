@@ -5,59 +5,118 @@
     <title>Jatan Bhatt | Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
     
 <!-- Style of the Webpage -->    
     <style>
-      body {font-family: Arial, sans-serif; max-width: 800px; 
-            margin: 20px auto;  padding: 0 20px;  line-height: 1.6; 
-            }
+      body {
+        font-family: 'Inter', sans-serif; 
+        max-width: 800px; 
+        margin: 20px auto; 
+        padding: 0 20px;  
+        line-height: 1.6; 
+        background: #ffffff}
       
-      nav {position: sticky; top: 0; background: rgba(11, 28, 45, 0.9);  
-           backdrop-filter: blur(8px), padding: 24px;  border-bottom: 2px solid #eee;}
+      nav {
+        position: sticky; 
+        top: 0; 
+        background: rgba(11, 28, 45, 0.9);  
+        backdrop-filter: blur(8px); 
+        padding: 16px 24px;  
+        border-bottom: 2px solid #eee;
+        z-index: 999}
       
-      nav a {color: #e6eef7; margin-right: 16px; text-decoration: none;font-weight: bold;}
+      nav a {
+        color: #e6eef7; 
+        margin-right: 16px; 
+        text-decoration: none;
+        font-weight: bold;}
       
-      .container { max-width: 1000px;  margin: 0 auto; padding: 60px 20px; }
+      nav a:hover {text-decoration: underline;}
 
-      section {padding: 80px 0; margin-top: 30px; margin-bottom: 50px}
+      .container {
+        max-width: 1000px;  
+        margin: 0 auto; 
+        padding: 24px 20px 60px;}
 
-      #home {background-color: #e6f4f1; color: #1a2b2b;}
-      #about, #portfolio, #contact {background-color: #0f3057;color: #e6eef7;}
-      #about {border-top: 4px solid #e6f4f1;}
+      /* Section Themes */
+      section {
+        padding: 64px 20px;
+        margin: 30px 0;
+        border-radius: 14px;}
 
-      h1, h2 {color: #333;}
+      #home {
+        background-color: #e6f4f1; 
+        color: #1a2b2b;}
+      
+      #home a { color: #0066cc;}
+      #home small { color: #355;}
+      
+      #about, #portfolio, #contact {
+        background-color: #0f3057;
+        color: #e6eef7;}
+
+      /* Text Style */
+      h1, h2, h3 {color: #333;}
       p {color: #555;}
       a {color: #0066cc; text-decoration: none;}
       a:hover {text-decoration: underline;}
       small {color:#777;}
 
-      .button-link { display: inline-block; margin-right: 10px; padding: 8px 12px; 
-                    border: 1px solid #ddd;  border-radius: 6px; text-decoration: none;}
-
-      .project-card { border: 1px solid #eee; border-radius: 10px;
-                     padding: 14px; margin: 12px 0;}  
-      .project-card h3 { margin: 0 0 6px 0; color: #333;}      
-      .project-card p {margin: 0; color: #555;}      
-      .project-card a { text-decoration: none; color: #0066cc; font-weight: bold;}      
-      .project-card a:hover { text-decoration: underline;}
+      .button-link {
+        display: inline-block; 
+        margin-right: 10px; 
+        padding: 8px 12px; 
+        border: 1px solid #ddd;  
+        border-radius: 6px;
+        text-decoration: none;
+        background: rgba(255,255,255,0.75);
+        color: #0066cc;
+        font-weight: bold;}
 
       .resume-button {
-        display: inline-block; margin-top: 10px; padding: 10px 16px; 
-        background-color: #0066cc; color: white; text-decoration: none;
-        border-radius: 6px; font-weight: bold;}
+        display: inline-block; 
+        margin-top: 10px; 
+        padding: 10px 16px; 
+        background-color: #0066cc; 
+        color: white; 
+        text-decoration: none;
+        border-radius: 6px; 
+        font-weight: bold;}
+      
       .resume-button:hover {background-color: #004999;}
       
-      form input, form textarea {
-        width: 100%; max-width: 600px; padding: 10px;  margin-top: 6px;
-        border: 1px solid #ddd; border-radius: 6px; font-family: Helvetica, sans-serif;}
-      form button {
-        padding: 10px 16px;border: 1px solid #ddd; border-radius: 6px; background: #0066cc;
-        color: white; font-weight: bold; cursor: pointer;}
-      form button:hover {background: #004999;}
-     .hp {display: none;}
+      .project-card {
+        border: 1px solid #eee; 
+        border-radius: 10px;
+        padding: 14px; 
+        margin: 12px 0;} 
       
+      .project-card h3 {margin: 0 0 6px 0;}      
+      .project-card p {margin: 0; color: #555;} 
+
+      form button {
+        padding: 10px 16px;
+        border: 1px solid #ddd; 
+        border-radius: 6px; 
+        background: #0066cc;
+        color: white; 
+        font-weight: bold; 
+        cursor: pointer;}
+      
+      form button:hover {background: #004999;}
+
+      form input, form textarea {
+        width: 100%; 
+        max-width: 600px; 
+        padding: 10px;  
+        margin-top: 6px;
+        border: 1px solid #ddd; 
+        border-radius: 6px; 
+        font-family: 'Inter', sans-serif;}
+      
+      form button:hover {background: #004999;}
+     
+      .hp {display: none;}
     </style>  
    </head>
 
@@ -67,69 +126,69 @@
   #Create a Formspree Rule: If website_url_check is not empty → Tag as Spam -->
 
   <body>
-    <div class='container'>
     <!-- NAVIGATION PANEL -->
     <nav>
-      <a href= "#home">Home | </a>
-      <a href="#about">About Me | </a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href= "#home">Home  | </a>
+      <a href="#about">About Me  | </a>
+      <a href="#portfolio">Portfolio  |</a>
+      <a href="#skills">Skills  |</a>
+      <a href="#contact">Contact  |</a>
       <a href="resume.pdf" target="_blank">Resume</a>
     </nav>
 
     <!-- HOME PAGE -->
-    <section id = "home">
-      <h1>Welcome to my Porfolio</h1>
-      <p>Hi, I’m Jatan Bhatt. This site shares my projects, skills, and how to reach me.</p>
-      <p>
-        <a class="button-link" href="https://www.linkedin.com/in/jatan-bhatt/">LinkedIn</a>
-        <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
-        <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
-      </p>
-      <p><a class="resume-button" href="Jatan_Bhatt_Resume.pdf" target="_blank">View My Resume</a></p>
-    </section>
+    <div class="container">
+      <section id = "home">
+        <h1>Welcome to my Porfolio</h1>
+        <p>Hi, I’m Jatan Bhatt. This site shares my projects, skills, and how to reach me.</p>
+        <p>
+          <a class="button-link" href="https://www.linkedin.com/in/jatan-bhatt/">LinkedIn</a>
+          <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
+          <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
+        </p>
+        <p><a class="resume-button" href="Jatan_Bhatt_Resume.pdf" target="_blank">View My Resume</a></p>
+      </section>
     
     <!-- About Me section -->
-    <section id = "about">
-    <h2>About Me</h2>
-    <p>
-      I have a background in Data Science, Mechanical Engineering and Engineering Management.
-      I enjoy working with data, projects, and learning how things work.
-    <br>
-      This website is where I’ll share my projects and experience.
-    </p>
-    </section>
-    
-   
+      <section id = "about">
+        <h2>About Me</h2>
+        <p>
+        I have a background in Data Science, Mechanical Engineering and Engineering Management.
+        I enjoy working with data, projects, and learning how things work.
+        <br>
+        This website is where I’ll share my projects and experience.
+        </p>
+      </section>
+       
     <!-- Projects section -->
     <section id = 'section'>    
-    <h2>Projects</h2>
-    <p> Here are a few projects I’ve worked on:</p>      
-    <div class="project-card"> 
-      <h3>
-        <a href="https://github.com/jatan-bhatt-36/computer-vision-project">
-          Computer Vision Project
-        </a>
-      </h3>
-      <p>Evaluated GPU-trained models on their ability to detect underage alcohol consumers using facial recognition.</p>
-    </div>   
-    <div class="project-card"> 
-      <h3> 
-        <a href="https://github.com/jatan-bhatt-36/car-price-prediction-model">
-          Car Price Prediction Model
-        </a>
-      </h3>
-      <p>Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.</p>
-    </div>
-    <div class="project-card"> 
-      <h3> 
-        <a href="https://github.com/jatan-bhatt-36/car-price-prediction-model">
-          Car Price Prediction Model
-        </a>
-      </h3>
-      <p>Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.</p>
-    </div>  
+      <h2>Projects</h2>
+      <p> Here are a few projects I’ve worked on:</p>      
+    
+      <div class="project-card"> 
+        <h3>
+          <a href="https://github.com/jatan-bhatt-36/computer-vision-project">
+            Computer Vision Project
+          </a>
+        </h3>
+        <p>Evaluated GPU-trained models on their ability to detect underage alcohol consumers using facial recognition.</p>
+      </div>   
+      <div class="project-card"> 
+        <h3> 
+          <a href="https://github.com/jatan-bhatt-36/car-price-prediction-model">
+            Car Price Prediction Model
+          </a>
+        </h3>
+        <p>Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.</p>
+      </div>
+      <div class="project-card"> 
+        <h3> 
+          <a href="https://github.com/jatan-bhatt-36/car-price-prediction-model">
+            Car Price Prediction Model
+          </a>
+        </h3>
+        <p>Performed EDA to identify trends and deployed a web app to a cloud service for interactive data visualization.</p>
+      </div>  
     </section>
 
     <!-- Skills section -->
@@ -137,26 +196,33 @@
       <h2>Skills</h2>
       <ul>
         <li>Data Science
-        <small>
+          <br />
+          <small>
           Python, R, SQL, EDA, Data Visualization, Statistical Analysis, Hypothesis Testing, Data Storytelling
-        </small></li>
+          </small>
+        </li>
         <li>Machine Learning
+          <br />
           <small>
             Regression, Classification, Clustering, Feature Engineering, Model Optimization and Evaluation
-          </small></li>
+          </small>
+        </li>
         <li>Deep Learning
+          <br />
           <small>
             Neural Networks, Keras, Natural Language Processing, Transformers, LLMs, OpenCV, Agentic AI
-          </small></li>
+          </small>
+        </li>
       </ul>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>Contact Me!</h2>
       <form action="https://formspree.io/f/mpqwaeal" method="POST">
         <input type="hidden" name="_redirect" value="thank-you.html">
         <input type="text" name="_gotcha" class="hp">    
+        
         <p>
           <label>Your Name</label><br>
           <input type="text" name="name" required>
