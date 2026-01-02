@@ -55,10 +55,17 @@
       .hero{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 60px;
         width: 100%;}
 
+      .hero img{
+        width: 260px;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 50%;}
+     /* box-shadow: 0 12px 30px rgba(0,0,0,0.25);*/
+      
       .hero h1{
         margin: 0 0 10px 0;
         font-size: 56px;
@@ -153,18 +160,18 @@
 
     <!-- HOME PAGE -->
     <section id = "home">
-      <div class = "container">
-        <h1>Hello, Welcome to my Porfolio!</h1>
-        <p>Hi, I’m Jatan Bhatt. 
-          This site shares my projects, skills, and how to reach me.</p>
-        <p>
-          "Those who can imagine anything, can create the impossible.”
-          <a class="button-link" href="https://www.linkedin.com/in/jatan-bhatt/">LinkedIn</a>
-          <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
-          <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
-        </p>
-        <p><a class="primary-button" href="#about target">Learn About Me</a></p>
-      </div>
+      <div class = "container hero">
+         <div>
+          <img src=my_photo.jpg alt="Jatan Bhatt">
+        </div>
+        <div>
+          <small>Welcome to my portfolio</small>
+          <h1>Hi, I’m Jatan Bhatt.</h1>
+          <p>Data Scientist • Validation Expert • AI Enthusiast</p>
+          <p><em>“Those who can imagine anything can create the impossible.”</em></p>
+          <a class="primary-button" href="#about">Learn about me</a>
+        </div>
+       </div>
     </section>
     
     <!-- About Me section -->
@@ -178,6 +185,9 @@
           <br>
           This website is where I’ll share my projects and experience. 
           Check out my work below or reach out to me directly!
+          <a class="button-link" href="https://www.linkedin.com/in/jatan-bhatt/">LinkedIn</a>
+          <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
+          <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
         </p>
       </div>
     </section>
