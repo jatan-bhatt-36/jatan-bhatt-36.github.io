@@ -27,7 +27,8 @@
         color: #ffffff; 
         margin-right: 16px; 
         text-decoration: none;
-        font-weight: 600;}
+        font-weight: 600;
+        width: 100%;}
       
       nav a:hover {text-decoration: underline;}
 
@@ -39,13 +40,14 @@
       /* Section Themes */
       section {
         min-height: 100vh;
+        width: 100%;
         padding: 80px 0;
         margin: 0;
         scroll-margin-top: 90px;}
 
       /* Home section */
       #home {
-        background: #f4efe8;
+        background: ##bfae9a;
         color: #222;
         display: flex;
         align-items: center; }
@@ -152,9 +154,11 @@
     <!-- HOME PAGE -->
     <section id = "home">
       <div class = "container">
-        <h1>Welcome to my Porfolio</h1>
-        <p>Hi, I’m Jatan Bhatt. This site shares my projects, skills, and how to reach me.</p>
+        <h1>Hello, Welcome to my Porfolio!</h1>
+        <p>Hi, I’m Jatan Bhatt. 
+          This site shares my projects, skills, and how to reach me.</p>
         <p>
+          "Those who can imagine anything, can create the impossible.”
           <a class="button-link" href="https://www.linkedin.com/in/jatan-bhatt/">LinkedIn</a>
           <a class="button-link" href="https://github.com/jatan-bhatt-36">GitHub</a>
           <a class="button-link" href="mailto:jatanbhatt36@email.com">Email</a>
@@ -168,10 +172,12 @@
       <div class = "container">
         <h2>About Me</h2>
         <p>
-        I have a background in Data Science, Mechanical Engineering and Engineering Management.
-        I enjoy working with data, projects, and learning how things work.
-        <br>
-        This website is where I’ll share my projects and experience.
+          I work at the intersection of data, validation, and AI.        
+          I have a background in Data Science, Mechanical Engineering and Engineering Management.
+          I enjoy working with data, projects, and learning how things work.
+          <br>
+          This website is where I’ll share my projects and experience. 
+          Check out my work below or reach out to me directly!
         </p>
       </div>
     </section>
@@ -210,91 +216,93 @@
 
     <!-- All Projects -->
     <section id="projects">
-      <h2>My Projects</h2>
-      <p>Browse by category:</p>
-  
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/jatan-bhatt-36/Data-Analysis-Projects" target="_blank">
-            Data Science
-          </a>
-        </h3>
-        <p>EDA, visualization, analysis, storytelling.</p>
-      </div>  
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/jatan-bhatt-36/Predictive-Modeling-Projects" target="_blank">
-            Predictive Modeling
-          </a>
-        </h3>
-        <p>Regression/classification projects focused on prediction and evaluation.</p>
-      </div>  
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/jatan-bhatt-36/Applied-Machine-Learning" target="_blank">
-            Applied Machine Learning
-          </a>
-        </h3>
-        <p>End-to-end ML pipelines, tuning, and production-style work.</p>
-      </div>  
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/jatan-bhatt-36?tab=repositories" target="_blank">
-            All Projects
-          </a>
-        </h3>
-        <p>Everything in one place.</p>
+      <div class = 'container'>
+        <h2>My Projects</h2>
+        <p>Browse by category:</p>
+          <div class="project-card">
+          <h3>
+            <a href="https://github.com/jatan-bhatt-36/Data-Analysis-Projects" target="_blank">
+              Data Science
+            </a>
+          </h3>
+          <p>EDA, visualization, analysis, storytelling.</p>
+        </div>  
+        <div class="project-card">
+          <h3>
+            <a href="https://github.com/jatan-bhatt-36/Predictive-Modeling-Projects" target="_blank">
+              Predictive Modeling
+            </a>
+          </h3>
+          <p>Regression/classification projects focused on prediction and evaluation.</p>
+        </div>  
+        <div class="project-card">
+          <h3>
+            <a href="https://github.com/jatan-bhatt-36/Applied-Machine-Learning" target="_blank">
+              Applied Machine Learning
+            </a>
+          </h3>
+          <p>End-to-end ML pipelines, tuning, and production-style work.</p>
+        </div>  
+        <div class="project-card">
+          <h3>
+            <a href="https://github.com/jatan-bhatt-36?tab=repositories" target="_blank">
+              All Projects
+            </a>
+          </h3>
+          <p>Everything in one place.</p>
+        </div>
       </div>
     </section>
 
-
     <!-- Skills section -->
     <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Data Science
-          <br />
-          <small>
-          Python, R, SQL, EDA, Data Visualization, Statistical Analysis, Hypothesis Testing, Data Storytelling
-          </small>
-        </li>
-        <li>Machine Learning
-          <br />
-          <small>
-            Regression, Classification, Clustering, Feature Engineering, Model Optimization and Evaluation
-          </small>
-        </li>
-        <li>Deep Learning
-          <br />
-          <small>
-            Neural Networks, Keras, Natural Language Processing, Transformers, LLMs, OpenCV, Agentic AI
-          </small>
-        </li>
-      </ul>
+      <div class = "container">
+        <h2>Skills</h2>
+        <ul>
+          <li>Data Science
+            <br />
+            <small>
+            Python, R, SQL, EDA, Data Visualization, Statistical Analysis, Hypothesis Testing, Data Storytelling
+            </small>
+          </li>
+          <li>Machine Learning
+            <br />
+            <small>
+              Regression, Classification, Clustering, Feature Engineering, Model Optimization and Evaluation
+            </small>
+          </li>
+          <li>Deep Learning
+            <br />
+            <small>
+              Neural Networks, Keras, Natural Language Processing, Transformers, LLMs, OpenCV, Agentic AI
+            </small>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact">
-      <h2>Contact Me!</h2>
-      <form action="https://formspree.io/f/mpqwaeal" method="POST">
-        <input type="hidden" name="_redirect" value="thank-you.html">
-        <input type="text" name="_gotcha" class="hp">    
-        
-        <p>
-          <label>Your Name</label><br>
-          <input type="text" name="name" required>
-        </p>
-        <p>
-          <label>Your Email</label><br>
-          <input type="email" name="email" required>
-        </p>
-        <p>
-          <label>Message</label><br>
-          <textarea name="message" rows="5" required></textarea>
-        </p>
-
+      <div class = "container">
+        <h2>Contact Me!</h2>
+        <form action="https://formspree.io/f/mpqwaeal" method="POST">
+          <input type="hidden" name="_redirect" value="thank-you.html">
+          <input type="text" name="_gotcha" class="hp">    
+          <p>
+            <label>Your Name</label><br>
+            <input type="text" name="name" required>
+          </p>
+          <p>
+            <label>Your Email</label><br>
+            <input type="email" name="email" required>
+          </p>
+          <p>
+            <label>Message</label><br>
+            <textarea name="message" rows="5" required></textarea>
+          </p>
         <button type="submit">Send</button>
-      </form>
+        </form>
+      </div>
     </section> 
     </div>
   </body>
